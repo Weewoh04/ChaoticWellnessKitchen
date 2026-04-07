@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { RecipeCard } from "@/components/RecipeCard";
 import { SectionHeading } from "@/components/SectionHeading";
 import { recipeCategories, recipes } from "@/data/recipes";
@@ -24,12 +25,13 @@ export default function RecipesPage() {
         />
         <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
           {recipeCategories.map((category) => (
-            <div
-              className="rounded-3xl bg-cream p-5 text-sm font-bold leading-6 text-stone-800 shadow-sm ring-1 ring-amber-100"
-              key={category}
+            <Link
+              className="rounded-3xl bg-cream p-5 text-sm font-bold leading-6 text-stone-800 shadow-sm ring-1 ring-amber-100 transition hover:-translate-y-1 hover:bg-amber-50 hover:shadow-md"
+              href={`/recipes/category/${category.slug}`}
+              key={category.slug}
             >
-              {category}
-            </div>
+              {category.title}
+            </Link>
           ))}
         </div>
       </section>

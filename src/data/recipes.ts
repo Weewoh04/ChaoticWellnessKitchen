@@ -1,12 +1,32 @@
 export const recipeCategories = [
-  "Cozy Broths & Healing Feeling Soups",
-  "Warm Drinks",
-  "Cold Wellness/Hydration",
-  "Remedy Shots and Mixes",
-  "Cozy Add-Ons",
+  {
+    title: "Cozy Broths & Healing Feeling Soups",
+    slug: "cozy-broths-healing-feeling-soups",
+    description: "Savory bowls and brothy cups for cozy, comfort-first days.",
+  },
+  {
+    title: "Warm Drinks",
+    slug: "warm-drinks",
+    description: "Steamy mugs, gentle teas, and slow-sip kitchen rituals.",
+  },
+  {
+    title: "Cold Wellness/Hydration",
+    slug: "cold-wellness-hydration",
+    description: "Infused waters and chilled ideas that make sipping feel easier.",
+  },
+  {
+    title: "Remedy Shots and Mixes",
+    slug: "remedy-shots-and-mixes",
+    description: "Small, punchy mixes for flavor-forward pantry experiments.",
+  },
+  {
+    title: "Cozy Add-Ons",
+    slug: "cozy-add-ons",
+    description: "Freezer helpers, little toppings, and easy extras.",
+  },
 ] as const;
 
-export type RecipeCategory = (typeof recipeCategories)[number];
+export type RecipeCategory = (typeof recipeCategories)[number]["title"];
 
 export type Recipe = {
   slug: string;
@@ -172,8 +192,120 @@ export const recipes: Recipe[] = [
     ],
     notes: ["Keep the heat gentle so the garlic stays mellow, not bitter."],
   },
+  {
+    slug: "golden-chicken-bone-broth-soup",
+    title: "Golden Chicken Bone Broth Soup",
+    description:
+      "A cozy golden chicken soup placeholder, ready for the full recipe details soon.",
+    image: "/images/recipe-placeholder.jpg",
+    prepTime: "Coming soon",
+    category: "Cozy Broths & Healing Feeling Soups",
+    bestFor: ["cozy broths", "comfort soup", "coming soon"],
+    ingredients: ["Full ingredient list coming soon."],
+    instructions: ["Full instructions coming soon."],
+    notes: ["Placeholder recipe. Add the full recipe details when ready."],
+  },
+  {
+    slug: "garlic-onion-comfort-broth",
+    title: "Garlic Onion Comfort Broth",
+    description:
+      "A simple, savory broth placeholder for cozy garlic and onion comfort.",
+    image: "/images/recipe-placeholder.jpg",
+    prepTime: "Coming soon",
+    category: "Cozy Broths & Healing Feeling Soups",
+    bestFor: ["savory", "comfort broth", "coming soon"],
+    ingredients: ["Full ingredient list coming soon."],
+    instructions: ["Full instructions coming soon."],
+    notes: ["Placeholder recipe. Add the full recipe details when ready."],
+  },
+  {
+    slug: "lazy-day-rotisserie-chicken-soup",
+    title: "Lazy Day Rotisserie Chicken Soup",
+    description:
+      "A low-effort chicken soup placeholder for days when easy and cozy is the whole plan.",
+    image: "/images/recipe-placeholder.jpg",
+    prepTime: "Coming soon",
+    category: "Cozy Broths & Healing Feeling Soups",
+    bestFor: ["lazy day", "rotisserie chicken", "coming soon"],
+    ingredients: ["Full ingredient list coming soon."],
+    instructions: ["Full instructions coming soon."],
+    notes: ["Placeholder recipe. Add the full recipe details when ready."],
+  },
+  {
+    slug: "turmeric-ginger-chicken-soup",
+    title: "Turmeric Ginger Chicken Soup",
+    description:
+      "A warm, golden chicken soup placeholder with turmeric and ginger notes.",
+    image: "/images/recipe-placeholder.jpg",
+    prepTime: "Coming soon",
+    category: "Cozy Broths & Healing Feeling Soups",
+    bestFor: ["golden soup", "ginger", "coming soon"],
+    ingredients: ["Full ingredient list coming soon."],
+    instructions: ["Full instructions coming soon."],
+    notes: ["Placeholder recipe. Add the full recipe details when ready."],
+  },
+  {
+    slug: "simple-salt-and-herb-bone-broth",
+    title: "Simple Salt & Herb Bone Broth",
+    description:
+      "A pared-back bone broth placeholder with salt, herbs, and cozy simplicity.",
+    image: "/images/recipe-placeholder.jpg",
+    prepTime: "Coming soon",
+    category: "Cozy Broths & Healing Feeling Soups",
+    bestFor: ["bone broth", "simple", "coming soon"],
+    ingredients: ["Full ingredient list coming soon."],
+    instructions: ["Full instructions coming soon."],
+    notes: ["Placeholder recipe. Add the full recipe details when ready."],
+  },
+  {
+    slug: "egg-drop-wellness-broth",
+    title: "Egg Drop Wellness Broth",
+    description:
+      "A silky egg drop broth placeholder for a quick, comforting cup or bowl.",
+    image: "/images/recipe-placeholder.jpg",
+    prepTime: "Coming soon",
+    category: "Cozy Broths & Healing Feeling Soups",
+    bestFor: ["quick broth", "egg drop", "coming soon"],
+    ingredients: ["Full ingredient list coming soon."],
+    instructions: ["Full instructions coming soon."],
+    notes: ["Placeholder recipe. Add the full recipe details when ready."],
+  },
+  {
+    slug: "sick-day-sip-broth",
+    title: "Sick Day Sip Broth",
+    description:
+      "A cozy sipping broth placeholder for days when you want something warm and gentle.",
+    image: "/images/recipe-placeholder.jpg",
+    prepTime: "Coming soon",
+    category: "Cozy Broths & Healing Feeling Soups",
+    bestFor: ["sipping broth", "cozy days", "coming soon"],
+    ingredients: ["Full ingredient list coming soon."],
+    instructions: ["Full instructions coming soon."],
+    notes: ["Placeholder recipe. Add the full recipe details when ready."],
+  },
+  {
+    slug: "freezer-scrap-veggie-broth",
+    title: "Freezer Scrap Veggie Broth",
+    description:
+      "A flexible veggie broth placeholder for turning saved scraps into something cozy.",
+    image: "/images/recipe-placeholder.jpg",
+    prepTime: "Coming soon",
+    category: "Cozy Broths & Healing Feeling Soups",
+    bestFor: ["veggie broth", "freezer-friendly", "coming soon"],
+    ingredients: ["Full ingredient list coming soon."],
+    instructions: ["Full instructions coming soon."],
+    notes: ["Placeholder recipe. Add the full recipe details when ready."],
+  },
 ];
 
 export function getRecipeBySlug(slug: string) {
   return recipes.find((recipe) => recipe.slug === slug);
+}
+
+export function getRecipeCategoryBySlug(slug: string) {
+  return recipeCategories.find((category) => category.slug === slug);
+}
+
+export function getRecipesByCategory(category: RecipeCategory) {
+  return recipes.filter((recipe) => recipe.category === category);
 }
