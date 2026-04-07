@@ -396,6 +396,129 @@ export const recipes: Recipe[] = [
     ],
   },
   {
+    slug: "lemon-chicken-rice-broth",
+    title: "Lemon Chicken Rice Broth",
+    description:
+      "A light, cozy broth with soft rice and lemon that feels simple and comforting.",
+    image: "/images/recipe-placeholder.jpg",
+    prepTime: "15 minutes",
+    category: "Cozy Broths & Healing-Feeling Soups",
+    bestFor: ["sick days", "light meals", "cozy comfort"],
+    ingredients: [
+      "4 cups chicken broth",
+      "1/2 cup cooked rice",
+      "1/2 cup shredded chicken",
+      "Squeeze of lemon",
+      "Salt to taste",
+    ],
+    instructions: [
+      "Bring broth to a simmer.",
+      "Add rice and chicken.",
+      "Heat through.",
+      "Add lemon and salt.",
+      "Serve warm.",
+    ],
+    notes: ["Soft, simple, and easy to eat."],
+  },
+  {
+    slug: "miso-ginger-comfort-broth",
+    title: "Miso Ginger Comfort Broth",
+    description:
+      "A warm, savory broth with ginger and miso for a simple cozy sip.",
+    image: "/images/recipe-placeholder.jpg",
+    prepTime: "5 minutes",
+    category: "Cozy Broths & Healing-Feeling Soups",
+    bestFor: ["cozy evenings", "light meals"],
+    ingredients: ["2 cups hot water", "1 tablespoon miso paste", "1 teaspoon grated ginger"],
+    instructions: [
+      "Stir miso into hot water.",
+      "Add ginger.",
+      "Mix well and sip warm.",
+    ],
+    notes: ["Do not boil after adding miso."],
+  },
+  {
+    slug: "creamy-potato-sip-soup",
+    title: "Creamy Potato Sip Soup",
+    description:
+      "A soft blended potato soup that feels warm and filling without being heavy.",
+    image: "/images/recipe-placeholder.jpg",
+    prepTime: "15 minutes",
+    category: "Cozy Broths & Healing-Feeling Soups",
+    bestFor: ["comfort meals", "low appetite"],
+    ingredients: ["2 potatoes, cooked", "2 cups broth", "1 tablespoon butter", "Salt to taste"],
+    instructions: [
+      "Blend all ingredients until smooth.",
+      "Heat gently.",
+      "Serve warm.",
+    ],
+    notes: ["Add more broth for thinner texture."],
+  },
+  {
+    slug: "tomato-basil-light-soup",
+    title: "Tomato Basil Light Soup",
+    description:
+      "A simple, smooth tomato soup with basil that feels warm and easy to enjoy.",
+    image: "/images/recipe-placeholder.jpg",
+    prepTime: "10 minutes",
+    category: "Cozy Broths & Healing-Feeling Soups",
+    bestFor: ["light meals", "cozy comfort"],
+    ingredients: [
+      "2 cups tomato soup or blended tomatoes",
+      "Pinch dried basil",
+      "1 tablespoon cream, optional",
+      "Salt to taste",
+    ],
+    instructions: [
+      "Heat tomato base in a pot.",
+      "Add basil and cream if using.",
+      "Stir and warm through.",
+      "Season and serve.",
+    ],
+    notes: ["Keep it light or make it creamy."],
+  },
+  {
+    slug: "zucchini-herb-broth",
+    title: "Zucchini Herb Broth",
+    description:
+      "A soft, veggie-based broth with zucchini and herbs for a light, cozy bowl.",
+    image: "/images/recipe-placeholder.jpg",
+    prepTime: "15 minutes",
+    category: "Cozy Broths & Healing-Feeling Soups",
+    bestFor: ["light meals", "simple comfort"],
+    ingredients: [
+      "3 cups broth",
+      "1 zucchini, sliced",
+      "Pinch dried herbs",
+      "Salt to taste",
+    ],
+    instructions: [
+      "Bring broth to a simmer.",
+      "Add zucchini and herbs.",
+      "Cook until soft.",
+      "Serve warm.",
+    ],
+    notes: ["Very light and simple."],
+  },
+  {
+    slug: "spinach-garlic-broth",
+    title: "Spinach Garlic Broth",
+    description:
+      "A simple broth with garlic and spinach that feels fresh and comforting.",
+    image: "/images/recipe-placeholder.jpg",
+    prepTime: "10 minutes",
+    category: "Cozy Broths & Healing-Feeling Soups",
+    bestFor: ["reset days", "light meals"],
+    ingredients: ["3 cups broth", "1 handful spinach", "2 cloves garlic", "Salt to taste"],
+    instructions: [
+      "Bring broth to a simmer.",
+      "Add garlic and cook 5 minutes.",
+      "Add spinach until wilted.",
+      "Serve warm.",
+    ],
+    notes: ["Fresh and simple."],
+  },
+  {
     slug: "golden-turmeric-milk",
     title: "Golden Turmeric Milk",
     description:
@@ -553,6 +676,176 @@ export const recipes: Recipe[] = [
     ],
   },
   {
+    slug: "cozy-apple-cinnamon-water",
+    title: "Cozy Apple Cinnamon Water",
+    description:
+      "A soft apple and cinnamon warm water for fall mornings and cozy sipping.",
+    image: "/images/recipe-placeholder.jpg",
+    prepTime: "10 minutes",
+    category: "Warm Drinks",
+    bestFor: ["fall mornings", "cozy sipping", "apple cinnamon"],
+    ingredients: [
+      "1 cup hot water",
+      "2 apple slices",
+      "Pinch cinnamon",
+      "1 teaspoon honey",
+    ],
+    instructions: [
+      "Add apple slices and cinnamon to hot water.",
+      "Steep 5 to 8 minutes.",
+      "Stir in honey.",
+      "Serve warm.",
+    ],
+    notes: [
+      "Soft apple flavor with cozy spice.",
+      "Honey should not be given to infants under 1 year old.",
+    ],
+  },
+  {
+    slug: "lavender-honey-tea",
+    title: "Lavender Honey Tea",
+    description:
+      "A soft, calming tea with light floral notes and honey sweetness.",
+    image: "/images/recipe-placeholder.jpg",
+    prepTime: "10 minutes",
+    category: "Warm Drinks",
+    bestFor: ["bedtime", "calm evenings"],
+    ingredients: ["1 cup hot water", "1/2 teaspoon dried lavender", "1 teaspoon honey"],
+    instructions: [
+      "Steep lavender in hot water.",
+      "Strain.",
+      "Add honey and stir.",
+    ],
+    notes: [
+      "Use food-grade lavender only.",
+      "Honey should not be given to infants under 1 year old.",
+    ],
+  },
+  {
+    slug: "chamomile-vanilla-tea",
+    title: "Chamomile Vanilla Tea",
+    description:
+      "A cozy tea with soft vanilla and chamomile for relaxed evenings.",
+    image: "/images/recipe-placeholder.jpg",
+    prepTime: "10 minutes",
+    category: "Warm Drinks",
+    bestFor: ["sleep routine", "calm"],
+    ingredients: [
+      "1 chamomile tea bag",
+      "1 cup hot water",
+      "Splash vanilla",
+      "1 teaspoon honey",
+    ],
+    instructions: [
+      "Steep tea.",
+      "Add vanilla and honey.",
+      "Serve warm.",
+    ],
+    notes: [
+      "Light and soothing.",
+      "Honey should not be given to infants under 1 year old.",
+    ],
+  },
+  {
+    slug: "rose-petal-warm-water",
+    title: "Rose Petal Warm Water",
+    description:
+      "A light floral drink with a soft, calming vibe.",
+    image: "/images/recipe-placeholder.jpg",
+    prepTime: "10 minutes",
+    category: "Warm Drinks",
+    bestFor: ["calm moments", "self-care"],
+    ingredients: ["1 cup hot water", "1/2 teaspoon dried rose petals", "1 teaspoon honey"],
+    instructions: [
+      "Steep rose petals in hot water.",
+      "Strain.",
+      "Add honey and stir.",
+    ],
+    notes: [
+      "Use food-safe rose petals only.",
+      "Honey should not be given to infants under 1 year old.",
+    ],
+  },
+  {
+    slug: "coconut-milk-warm-drink",
+    title: "Coconut Milk Warm Drink",
+    description:
+      "A creamy, cozy warm drink made with coconut milk and a touch of sweetness.",
+    image: "/images/recipe-placeholder.jpg",
+    prepTime: "8 minutes",
+    category: "Warm Drinks",
+    bestFor: ["cozy nights", "comfort drinks"],
+    ingredients: ["1 cup coconut milk", "1 teaspoon honey", "Pinch cinnamon"],
+    instructions: [
+      "Heat coconut milk gently.",
+      "Stir in honey and cinnamon.",
+      "Serve warm.",
+    ],
+    notes: [
+      "Rich and comforting.",
+      "Honey should not be given to infants under 1 year old.",
+    ],
+  },
+  {
+    slug: "molasses-cinnamon-milk",
+    title: "Molasses Cinnamon Milk",
+    description:
+      "A warm, slightly sweet drink with deep molasses flavor and cinnamon.",
+    image: "/images/recipe-placeholder.jpg",
+    prepTime: "8 minutes",
+    category: "Warm Drinks",
+    bestFor: ["evening drinks", "cozy vibes"],
+    ingredients: ["1 cup milk", "1 teaspoon molasses", "Pinch cinnamon"],
+    instructions: [
+      "Heat milk.",
+      "Stir in molasses and cinnamon.",
+      "Serve warm.",
+    ],
+    notes: ["Unique flavor, slightly rich."],
+  },
+  {
+    slug: "warm-lemon-vanilla-water",
+    title: "Warm Lemon Vanilla Water",
+    description:
+      "A soft citrus drink with a hint of vanilla for a cozy twist.",
+    image: "/images/recipe-placeholder.jpg",
+    prepTime: "5 minutes",
+    category: "Warm Drinks",
+    bestFor: ["morning routine", "light sipping"],
+    ingredients: [
+      "1 cup warm water",
+      "Squeeze lemon",
+      "Splash vanilla",
+      "1 teaspoon honey",
+    ],
+    instructions: [
+      "Mix all ingredients together.",
+      "Stir well.",
+      "Serve warm.",
+    ],
+    notes: [
+      "Bright but soft flavor.",
+      "Honey should not be given to infants under 1 year old.",
+    ],
+  },
+  {
+    slug: "toasted-marshmallow-milk",
+    title: "Toasted Marshmallow Milk",
+    description:
+      "A fun, cozy drink with melted marshmallow sweetness.",
+    image: "/images/recipe-placeholder.jpg",
+    prepTime: "8 minutes",
+    category: "Warm Drinks",
+    bestFor: ["treat drinks", "cozy nights"],
+    ingredients: ["1 cup milk", "2 marshmallows"],
+    instructions: [
+      "Heat milk.",
+      "Stir in marshmallows until melted.",
+      "Serve warm.",
+    ],
+    notes: ["Sweet and nostalgic."],
+  },
+  {
     slug: "strawberry-basil-hydration-water",
     title: "Strawberry Basil Hydration Water",
     description:
@@ -653,6 +946,70 @@ export const recipes: Recipe[] = [
       "Serve cold.",
     ],
     notes: ["Naturally sweet and hydrating."],
+  },
+  {
+    slug: "pineapple-mint-water",
+    title: "Pineapple Mint Water",
+    description:
+      "A fresh and slightly sweet hydration drink with pineapple and mint.",
+    image: "/images/recipe-placeholder.jpg",
+    prepTime: "25 minutes",
+    category: "Cold Wellness/Hydration",
+    bestFor: ["hydration", "summer days"],
+    ingredients: ["4 cups water", "Pineapple chunks", "Mint leaves"],
+    instructions: [
+      "Add ingredients to water.",
+      "Chill 20 minutes.",
+      "Serve cold.",
+    ],
+    notes: ["Best served chilled."],
+  },
+  {
+    slug: "blueberry-lemon-water",
+    title: "Blueberry Lemon Water",
+    description:
+      "A light fruit-infused water with a bright lemon finish.",
+    image: "/images/recipe-placeholder.jpg",
+    prepTime: "20 minutes",
+    category: "Cold Wellness/Hydration",
+    bestFor: ["hydration", "refreshing drinks"],
+    ingredients: ["4 cups water", "Handful blueberries", "Lemon slices"],
+    instructions: [
+      "Combine ingredients.",
+      "Chill.",
+      "Serve cold.",
+    ],
+    notes: ["Light and refreshing."],
+  },
+  {
+    slug: "apple-cider-chill-drink",
+    title: "Apple Cider Chill Drink",
+    description:
+      "A simple chilled apple cider drink with a fresh, cozy feel.",
+    image: "/images/recipe-placeholder.jpg",
+    prepTime: "5 minutes",
+    category: "Cold Wellness/Hydration",
+    bestFor: ["fall drinks", "refreshing"],
+    ingredients: ["1 cup apple cider", "Ice", "Cinnamon stick"],
+    instructions: [
+      "Pour cider over ice.",
+      "Add cinnamon stick.",
+      "Serve cold.",
+    ],
+    notes: ["Simple and seasonal."],
+  },
+  {
+    slug: "aloe-lime-water",
+    title: "Aloe Lime Water",
+    description:
+      "A light, refreshing drink with aloe and lime.",
+    image: "/images/recipe-placeholder.jpg",
+    prepTime: "5 minutes",
+    category: "Cold Wellness/Hydration",
+    bestFor: ["hydration", "reset days"],
+    ingredients: ["1 cup water", "2 tablespoons aloe juice", "Squeeze lime"],
+    instructions: ["Mix all ingredients.", "Serve chilled."],
+    notes: ["Very light and refreshing."],
   },
   {
     slug: "ginger-lemon-shot",
@@ -807,6 +1164,38 @@ export const recipes: Recipe[] = [
     ],
   },
   {
+    slug: "ginger-lime-shot",
+    title: "Ginger Lime Shot",
+    description:
+      "A bold, quick shot with ginger and lime for a bright start.",
+    image: "/images/recipe-placeholder.jpg",
+    prepTime: "5 minutes",
+    category: "Remedy Shots and Mixes",
+    bestFor: ["morning reset"],
+    ingredients: ["1 tablespoon ginger", "2 tablespoons lime juice", "1 teaspoon honey"],
+    instructions: ["Mix ingredients.", "Take as a shot."],
+    notes: [
+      "Strong flavor.",
+      "Honey should not be given to infants under 1 year old.",
+    ],
+  },
+  {
+    slug: "honey-cinnamon-paste",
+    title: "Honey Cinnamon Paste",
+    description:
+      "A simple mix you can take by the spoon or stir into drinks.",
+    image: "/images/recipe-placeholder.jpg",
+    prepTime: "5 minutes",
+    category: "Remedy Shots and Mixes",
+    bestFor: ["cozy routines"],
+    ingredients: ["1 teaspoon honey", "Pinch cinnamon"],
+    instructions: ["Mix together.", "Take as a spoonful."],
+    notes: [
+      "Also great in tea.",
+      "Honey should not be given to infants under 1 year old.",
+    ],
+  },
+  {
     slug: "honey-butter-toast",
     title: "Honey Butter Toast",
     description:
@@ -948,6 +1337,39 @@ export const recipes: Recipe[] = [
       "Eat together.",
     ],
     notes: ["Minimal effort comfort meal."],
+  },
+  {
+    slug: "butter-rice-with-herbs",
+    title: "Butter Rice with Herbs",
+    description:
+      "Soft rice with butter and herbs for a simple comfort side.",
+    image: "/images/recipe-placeholder.jpg",
+    prepTime: "5 minutes with cooked rice",
+    category: "Cozy Add-Ons",
+    bestFor: ["easy meals"],
+    ingredients: ["1 cup cooked rice", "1 tablespoon butter", "Pinch herbs"],
+    instructions: ["Mix everything together.", "Serve warm."],
+    notes: ["Simple and filling."],
+  },
+  {
+    slug: "warm-apples-with-cinnamon",
+    title: "Warm Apples with Cinnamon",
+    description:
+      "Soft warm apples with cinnamon for a cozy sweet side.",
+    image: "/images/recipe-placeholder.jpg",
+    prepTime: "10 minutes",
+    category: "Cozy Add-Ons",
+    bestFor: ["comfort snacks"],
+    ingredients: ["1 apple, sliced", "Pinch cinnamon", "1 teaspoon honey"],
+    instructions: [
+      "Cook apples until soft.",
+      "Add cinnamon and honey.",
+      "Serve warm.",
+    ],
+    notes: [
+      "Feels like a cozy comfort snack.",
+      "Honey should not be given to infants under 1 year old.",
+    ],
   },
 ];
 
