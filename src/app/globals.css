@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cream: #fff8eb;
+  --color-honey: #f4c76f;
+  --color-herbal: #dfead7;
+  --font-serif: Georgia, "Times New Roman", serif;
+  --font-sans: Inter, ui-sans-serif, system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background:
+    radial-gradient(circle at top left, rgba(244, 199, 111, 0.3), transparent 32rem),
+    linear-gradient(180deg, #fff8eb 0%, #f9efe0 48%, #fff8eb 100%);
+  color: #292524;
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+}
+
+a {
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
