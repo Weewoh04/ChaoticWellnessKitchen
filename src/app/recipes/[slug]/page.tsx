@@ -47,6 +47,7 @@ export default async function RecipeDetailPage({ params }: RecipePageProps) {
         <div className="space-y-10 p-8 sm:p-12">
           <header>
             <div className="mb-5 flex flex-wrap gap-2">
+              <TagPill label={recipe.category} />
               {recipe.bestFor.map((tag) => (
                 <TagPill key={tag} label={tag} />
               ))}

@@ -1,9 +1,20 @@
+export const recipeCategories = [
+  "Cozy Broths & Healing Feeling Soups",
+  "Warm Drinks",
+  "Cold Wellness/Hydration",
+  "Remedy Shots and Mixes",
+  "Cozy Add-Ons",
+] as const;
+
+export type RecipeCategory = (typeof recipeCategories)[number];
+
 export type Recipe = {
   slug: string;
   title: string;
   description: string;
   image: string;
   prepTime: string;
+  category: RecipeCategory;
   bestFor: string[];
   ingredients: string[];
   instructions: string[];
@@ -19,6 +30,7 @@ export const recipes: Recipe[] = [
       "A bright, cozy cup many people enjoy when they want something warm, simple, and comforting.",
     image: "/images/hero-tea.jpg",
     prepTime: "10 minutes",
+    category: "Warm Drinks",
     bestFor: ["cozy mornings", "scratchy throat days", "pantry-friendly"],
     ingredients: [
       "1 cup hot water",
@@ -46,6 +58,7 @@ export const recipes: Recipe[] = [
       "A softly spiced citrus tea that makes slow mornings feel a little more special.",
     image: "/images/recipe-placeholder.jpg",
     prepTime: "12 minutes",
+    category: "Warm Drinks",
     bestFor: ["slow mornings", "cozy afternoons", "citrus"],
     ingredients: [
       "1 black tea bag or rooibos tea bag",
@@ -68,6 +81,7 @@ export const recipes: Recipe[] = [
       "A crisp infused water for days when plain water needs a little cozy-kitchen encouragement.",
     image: "/images/recipe-placeholder.jpg",
     prepTime: "5 minutes",
+    category: "Cold Wellness/Hydration",
     bestFor: ["hydration", "fresh", "make-ahead"],
     ingredients: [
       "4 cups cold water",
@@ -90,6 +104,7 @@ export const recipes: Recipe[] = [
       "A gentle, floral warm milk many people enjoy as a calming-feeling evening ritual.",
     image: "/images/recipe-placeholder.jpg",
     prepTime: "10 minutes",
+    category: "Warm Drinks",
     bestFor: ["bedtime ritual", "cozy evenings", "floral"],
     ingredients: [
       "1 cup milk or oat milk",
@@ -115,6 +130,7 @@ export const recipes: Recipe[] = [
       "Freezer-friendly flavor cubes for sparkling water, iced tea, or a quick warm cup.",
     image: "/images/recipe-placeholder.jpg",
     prepTime: "10 minutes plus freezing",
+    category: "Cozy Add-Ons",
     bestFor: ["hydration", "meal prep", "freezer-friendly"],
     ingredients: [
       "1/2 cup fresh lemon juice",
@@ -137,6 +153,7 @@ export const recipes: Recipe[] = [
       "A savory, pantry-friendly broth that feels grounding when you want something simple and warm.",
     image: "/images/recipe-placeholder.jpg",
     prepTime: "20 minutes",
+    category: "Cozy Broths & Healing Feeling Soups",
     bestFor: ["cozy days", "savory", "pantry-friendly"],
     ingredients: [
       "4 cups vegetable or chicken broth",

@@ -11,6 +11,9 @@ export function RecipeCard({ recipe }: RecipeCardProps) {
     <article className="group overflow-hidden rounded-[2rem] border border-stone-200 bg-white/80 shadow-sm transition hover:-translate-y-1 hover:shadow-xl">
       <div className="h-44 bg-[radial-gradient(circle_at_30%_20%,#f8d28b,transparent_32%),linear-gradient(135deg,#fff7e8,#dce8d5)]" />
       <div className="space-y-4 p-6">
+        <p className="text-xs font-bold uppercase tracking-[0.22em] text-amber-700">
+          {recipe.category}
+        </p>
         <div className="flex flex-wrap gap-2">
           {recipe.bestFor.slice(0, 2).map((tag) => (
             <TagPill key={tag} label={tag} />
