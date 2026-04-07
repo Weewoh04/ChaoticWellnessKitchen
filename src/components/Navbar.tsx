@@ -3,7 +3,6 @@ import { recipeCategories } from "@/data/recipes";
 import { siteConfig } from "@/lib/site";
 
 const navLinks = [
-  { href: "/", label: "Home" },
   { href: "/blog", label: "Blog" },
   { href: "/about", label: "About" },
   { href: "/disclaimer", label: "Disclaimer" },
@@ -17,6 +16,12 @@ export function Navbar() {
           {siteConfig.name}
         </Link>
         <div className="flex flex-wrap gap-2 text-sm font-semibold text-stone-700">
+          <Link
+            className="rounded-full px-3 py-2 transition hover:bg-amber-100 hover:text-stone-950"
+            href="/"
+          >
+            Home
+          </Link>
           <details className="group relative">
             <summary className="cursor-pointer list-none rounded-full px-3 py-2 transition hover:bg-amber-100 hover:text-stone-950 [&::-webkit-details-marker]:hidden">
               Recipes
