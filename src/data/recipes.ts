@@ -1012,6 +1012,61 @@ export const recipes: Recipe[] = [
     notes: ["Very light and refreshing."],
   },
   {
+    slug: "coconut-lime-refresher",
+    title: "Coconut Lime Refresher",
+    description:
+      "A light, tropical drink with coconut and lime that feels fresh and simple.",
+    image: "/images/recipe-placeholder.jpg",
+    prepTime: "5 minutes",
+    category: "Cold Wellness/Hydration",
+    bestFor: ["hydration", "warm days"],
+    ingredients: ["1 cup coconut water", "Squeeze of lime", "Ice"],
+    instructions: [
+      "Mix coconut water and lime.",
+      "Pour over ice.",
+      "Serve cold.",
+    ],
+    notes: ["Light and refreshing."],
+  },
+  {
+    slug: "iced-hibiscus-tea",
+    title: "Iced Hibiscus Tea",
+    description:
+      "A bright, slightly tart tea served cold for a refreshing sip.",
+    image: "/images/recipe-placeholder.jpg",
+    prepTime: "10 minutes plus cooling",
+    category: "Cold Wellness/Hydration",
+    bestFor: ["hydration", "afternoon drinks"],
+    ingredients: [
+      "1 hibiscus tea bag",
+      "1 cup hot water",
+      "Ice",
+      "1 teaspoon honey, optional",
+    ],
+    instructions: [
+      "Steep tea in hot water.",
+      "Let cool.",
+      "Pour over ice and add honey if desired.",
+    ],
+    notes: [
+      "Bright and slightly tart.",
+      "Honey should not be given to infants under 1 year old.",
+    ],
+  },
+  {
+    slug: "mango-ginger-cooler",
+    title: "Mango Ginger Cooler",
+    description:
+      "A smooth, fruity drink with a hint of ginger for a fresh twist.",
+    image: "/images/recipe-placeholder.jpg",
+    prepTime: "5 minutes",
+    category: "Cold Wellness/Hydration",
+    bestFor: ["summer drinks", "refreshing"],
+    ingredients: ["1/2 cup mango chunks", "1/2 cup water", "1 teaspoon grated ginger"],
+    instructions: ["Blend all ingredients.", "Serve chilled."],
+    notes: ["Naturally sweet and fresh."],
+  },
+  {
     slug: "ginger-lemon-shot",
     title: "Ginger Lemon Shot",
     description:
@@ -1196,6 +1251,68 @@ export const recipes: Recipe[] = [
     ],
   },
   {
+    slug: "lemon-salt-shot",
+    title: "Lemon Salt Shot",
+    description:
+      "A quick, simple shot with lemon and a pinch of salt.",
+    image: "/images/recipe-placeholder.jpg",
+    prepTime: "5 minutes",
+    category: "Remedy Shots and Mixes",
+    bestFor: ["morning reset", "simple routines"],
+    ingredients: ["2 tablespoons lemon juice", "Pinch of salt"],
+    instructions: ["Mix ingredients.", "Take as a shot."],
+    notes: ["Very simple and bold."],
+  },
+  {
+    slug: "turmeric-pepper-shot",
+    title: "Turmeric Pepper Shot",
+    description:
+      "A bold, earthy shot with turmeric and a pinch of black pepper.",
+    image: "/images/recipe-placeholder.jpg",
+    prepTime: "5 minutes",
+    category: "Remedy Shots and Mixes",
+    bestFor: ["morning routines", "simple rituals"],
+    ingredients: [
+      "1/2 teaspoon turmeric",
+      "Pinch black pepper",
+      "1 teaspoon honey",
+      "2 tablespoons warm water",
+    ],
+    instructions: [
+      "Mix all ingredients.",
+      "Stir well.",
+      "Take as a shot.",
+    ],
+    notes: [
+      "Strong and warming.",
+      "Honey should not be given to infants under 1 year old.",
+    ],
+  },
+  {
+    slug: "warm-vinegar-honey-shot",
+    title: "Warm Vinegar Honey Shot",
+    description:
+      "A simple warm mix of vinegar and honey for a quick, bold sip.",
+    image: "/images/recipe-placeholder.jpg",
+    prepTime: "5 minutes",
+    category: "Remedy Shots and Mixes",
+    bestFor: ["reset days", "morning routines"],
+    ingredients: [
+      "1 tablespoon apple cider vinegar",
+      "1 teaspoon honey",
+      "2 tablespoons warm water",
+    ],
+    instructions: [
+      "Mix all ingredients.",
+      "Stir well.",
+      "Take as a shot.",
+    ],
+    notes: [
+      "Dilute more if needed.",
+      "Honey should not be given to infants under 1 year old.",
+    ],
+  },
+  {
     slug: "honey-butter-toast",
     title: "Honey Butter Toast",
     description:
@@ -1370,6 +1487,77 @@ export const recipes: Recipe[] = [
       "Feels like a cozy comfort snack.",
       "Honey should not be given to infants under 1 year old.",
     ],
+  },
+  {
+    slug: "mashed-sweet-potato-bowl",
+    title: "Mashed Sweet Potato Bowl",
+    description:
+      "A soft, warm bowl of mashed sweet potato that feels simple and comforting.",
+    image: "/images/recipe-placeholder.jpg",
+    prepTime: "5 minutes with cooked sweet potato",
+    category: "Cozy Add-Ons",
+    bestFor: ["comfort meals", "easy eating"],
+    ingredients: ["1 sweet potato, cooked", "1 tablespoon butter", "Pinch cinnamon"],
+    instructions: [
+      "Mash sweet potato.",
+      "Stir in butter and cinnamon.",
+      "Serve warm.",
+    ],
+    notes: ["Soft and naturally sweet."],
+  },
+  {
+    slug: "soft-banana-mash-bowl",
+    title: "Soft Banana Mash Bowl",
+    description:
+      "A simple mashed banana bowl that is soft, sweet, and easy to eat.",
+    image: "/images/recipe-placeholder.jpg",
+    prepTime: "5 minutes",
+    category: "Cozy Add-Ons",
+    bestFor: ["quick snacks", "low energy"],
+    ingredients: ["1 ripe banana", "1 teaspoon honey", "Pinch cinnamon"],
+    instructions: [
+      "Mash banana.",
+      "Stir in honey and cinnamon.",
+      "Serve immediately.",
+    ],
+    notes: [
+      "Very soft and simple.",
+      "Honey should not be given to infants under 1 year old.",
+    ],
+  },
+  {
+    slug: "warm-milk-and-toast-bowl",
+    title: "Warm Milk and Toast Bowl",
+    description:
+      "A cozy bowl with warm milk and soft toast pieces.",
+    image: "/images/recipe-placeholder.jpg",
+    prepTime: "5 minutes",
+    category: "Cozy Add-Ons",
+    bestFor: ["comfort meals", "nostalgic recipes"],
+    ingredients: ["1 cup warm milk", "1 slice toast, torn"],
+    instructions: [
+      "Warm the milk.",
+      "Add torn toast pieces.",
+      "Serve immediately.",
+    ],
+    notes: ["Very soft and comforting."],
+  },
+  {
+    slug: "simple-butter-noodle-bowl",
+    title: "Simple Butter Noodle Bowl",
+    description:
+      "A basic, cozy bowl of noodles with butter for easy comfort food.",
+    image: "/images/recipe-placeholder.jpg",
+    prepTime: "5 minutes with cooked noodles",
+    category: "Cozy Add-Ons",
+    bestFor: ["easy meals", "low effort"],
+    ingredients: ["1 cup cooked noodles", "1 tablespoon butter", "Pinch salt"],
+    instructions: [
+      "Mix noodles with butter.",
+      "Add salt.",
+      "Serve warm.",
+    ],
+    notes: ["Very simple and filling."],
   },
 ];
 
