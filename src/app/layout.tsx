@@ -62,6 +62,13 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
         />
+        <Script
+          async
+          data-cfasync="false"
+          data-zone="234249"
+          src="https://quge5.com/88/tag.min.js"
+          strategy="afterInteractive"
+        />
         <Navbar />
         <main>{children}</main>
         <Footer />
