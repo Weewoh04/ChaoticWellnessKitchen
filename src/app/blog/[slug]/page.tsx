@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { AdSlot } from "@/components/AdSlot";
 import { SectionHeading } from "@/components/SectionHeading";
 import { TagPill } from "@/components/TagPill";
+import { siteConfig } from "@/lib/site";
 import { blogPosts, getBlogPostBySlug } from "@/data/blogPosts";
 
 type BlogPostPageProps = {
@@ -30,6 +32,15 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
   return {
     title: post.title,
     description: post.excerpt,
+    alternates: {
+      canonical: `/blog/${post.slug}`,
+    },
+    openGraph: {
+      title: post.title,
+      description: post.excerpt,
+      type: "article",
+      url: `${siteConfig.url}/blog/${post.slug}`,
+    },
   };
 }
 
@@ -61,6 +72,8 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
             <p key={paragraph}>{paragraph}</p>
           ))}
         </div>
+
+        <AdSlot className="mt-10" format="horizontal" label="Sponsored placement" slot="blog-post-horizontal-1" />
 
         <div className="mt-10 space-y-10">
           {post.sections.map((section) => (

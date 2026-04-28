@@ -1,6 +1,6 @@
 export const recipeCategories = [
   {
-    title: "Cozy Broths & Healing-Feeling Soups",
+    title: "Cozy Broths & Comfort Soups",
     slug: "cozy-broths-healing-feeling-soups",
     description: "Savory bowls and brothy cups for cozy, comfort-first days.",
   },
@@ -162,7 +162,7 @@ export const recipes: Recipe[] = [
       "A savory, pantry-friendly broth that feels grounding when you want something simple and warm.",
     image: "/images/recipe-placeholder.jpg",
     prepTime: "20 minutes",
-    category: "Cozy Broths & Healing-Feeling Soups",
+    category: "Cozy Broths & Comfort Soups",
     bestFor: ["cozy days", "savory", "pantry-friendly"],
     ingredients: [
       "4 cups vegetable or chicken broth",
@@ -188,8 +188,8 @@ export const recipes: Recipe[] = [
       "A warm, golden chicken soup for cozy reset days and comfort-first meals.",
     image: "/images/recipe-placeholder.jpg",
     prepTime: "30 minutes",
-    category: "Cozy Broths & Healing-Feeling Soups",
-    bestFor: ["cozy reset days", "feeling run down", "comfort meals"],
+    category: "Cozy Broths & Comfort Soups",
+    bestFor: ["cozy reset days", "slow evenings", "comfort meals"],
     ingredients: [
       "6 cups chicken bone broth",
       "1 to 2 cups shredded chicken (rotisserie works great)",
@@ -220,7 +220,7 @@ export const recipes: Recipe[] = [
       "A simple, savory broth for low-effort comfort and light cozy meals.",
     image: "/images/recipe-placeholder.jpg",
     prepTime: "20 minutes",
-    category: "Cozy Broths & Healing-Feeling Soups",
+    category: "Cozy Broths & Comfort Soups",
     bestFor: ["simple comfort", "light meals", "low appetite days"],
     ingredients: [
       "4 cups broth (chicken or veggie)",
@@ -247,7 +247,7 @@ export const recipes: Recipe[] = [
       "A quick, low-effort chicken soup for busy days when cozy is the whole plan.",
     image: "/images/recipe-placeholder.jpg",
     prepTime: "25 minutes",
-    category: "Cozy Broths & Healing-Feeling Soups",
+    category: "Cozy Broths & Comfort Soups",
     bestFor: ["busy days", "quick comfort meals", "rotisserie chicken"],
     ingredients: [
       "6 cups broth",
@@ -272,7 +272,7 @@ export const recipes: Recipe[] = [
       "A warm, slightly bold chicken soup with turmeric, ginger, garlic, and cozy broth.",
     image: "/images/recipe-placeholder.jpg",
     prepTime: "25 minutes",
-    category: "Cozy Broths & Healing-Feeling Soups",
+    category: "Cozy Broths & Comfort Soups",
     bestFor: ["cozy evenings", "warming meals", "ginger"],
     ingredients: [
       "6 cups broth",
@@ -299,7 +299,7 @@ export const recipes: Recipe[] = [
       "A minimal, cozy broth with herbs and a pinch of salt for simple sipping.",
     image: "/images/recipe-placeholder.jpg",
     prepTime: "10 minutes",
-    category: "Cozy Broths & Healing-Feeling Soups",
+    category: "Cozy Broths & Comfort Soups",
     bestFor: ["calm", "simple", "reset days"],
     ingredients: [
       "4 cups broth",
@@ -320,7 +320,7 @@ export const recipes: Recipe[] = [
       "A silky egg drop broth for a quick, comforting cup or light bowl.",
     image: "/images/recipe-placeholder.jpg",
     prepTime: "10 minutes",
-    category: "Cozy Broths & Healing-Feeling Soups",
+    category: "Cozy Broths & Comfort Soups",
     bestFor: ["light meals", "quick comfort", "egg drop"],
     ingredients: [
       "4 cups broth",
@@ -346,8 +346,8 @@ export const recipes: Recipe[] = [
       "A simple, warm broth you can sip slowly when you do not feel like eating but still want something comforting and easy.",
     image: "/images/recipe-placeholder.jpg",
     prepTime: "10 minutes",
-    category: "Cozy Broths & Healing-Feeling Soups",
-    bestFor: ["sick days", "low energy", "no appetite", "cozy recovery"],
+    category: "Cozy Broths & Comfort Soups",
+    bestFor: ["quiet days", "low energy", "light sipping", "cozy recovery"],
     ingredients: [
       "2 to 3 cups chicken broth or veggie broth",
       "1 small clove garlic, lightly smashed, optional",
@@ -376,7 +376,7 @@ export const recipes: Recipe[] = [
       "A flexible veggie broth for turning saved scraps into something cozy and useful.",
     image: "/images/recipe-placeholder.jpg",
     prepTime: "1 hour",
-    category: "Cozy Broths & Healing-Feeling Soups",
+    category: "Cozy Broths & Comfort Soups",
     bestFor: ["reducing waste", "pantry cooking", "freezer-friendly"],
     ingredients: [
       "Veggie scraps (carrot peels, onion ends, celery tops, etc.)",
@@ -402,8 +402,8 @@ export const recipes: Recipe[] = [
       "A light, cozy broth with soft rice and lemon that feels simple and comforting.",
     image: "/images/recipe-placeholder.jpg",
     prepTime: "15 minutes",
-    category: "Cozy Broths & Healing-Feeling Soups",
-    bestFor: ["sick days", "light meals", "cozy comfort"],
+    category: "Cozy Broths & Comfort Soups",
+    bestFor: ["light meals", "simple comfort", "cozy comfort"],
     ingredients: [
       "4 cups chicken broth",
       "1/2 cup cooked rice",
@@ -427,7 +427,7 @@ export const recipes: Recipe[] = [
       "A warm, savory broth with ginger and miso for a simple cozy sip.",
     image: "/images/recipe-placeholder.jpg",
     prepTime: "5 minutes",
-    category: "Cozy Broths & Healing-Feeling Soups",
+    category: "Cozy Broths & Comfort Soups",
     bestFor: ["cozy evenings", "light meals"],
     ingredients: ["2 cups hot water", "1 tablespoon miso paste", "1 teaspoon grated ginger"],
     instructions: [
@@ -444,7 +444,7 @@ export const recipes: Recipe[] = [
       "A soft blended potato soup that feels warm and filling without being heavy.",
     image: "/images/recipe-placeholder.jpg",
     prepTime: "15 minutes",
-    category: "Cozy Broths & Healing-Feeling Soups",
+    category: "Cozy Broths & Comfort Soups",
     bestFor: ["comfort meals", "low appetite"],
     ingredients: ["2 potatoes, cooked", "2 cups broth", "1 tablespoon butter", "Salt to taste"],
     instructions: [
@@ -461,7 +461,7 @@ export const recipes: Recipe[] = [
       "A simple, smooth tomato soup with basil that feels warm and easy to enjoy.",
     image: "/images/recipe-placeholder.jpg",
     prepTime: "10 minutes",
-    category: "Cozy Broths & Healing-Feeling Soups",
+    category: "Cozy Broths & Comfort Soups",
     bestFor: ["light meals", "cozy comfort"],
     ingredients: [
       "2 cups tomato soup or blended tomatoes",
@@ -484,7 +484,7 @@ export const recipes: Recipe[] = [
       "A soft, veggie-based broth with zucchini and herbs for a light, cozy bowl.",
     image: "/images/recipe-placeholder.jpg",
     prepTime: "15 minutes",
-    category: "Cozy Broths & Healing-Feeling Soups",
+    category: "Cozy Broths & Comfort Soups",
     bestFor: ["light meals", "simple comfort"],
     ingredients: [
       "3 cups broth",
@@ -507,7 +507,7 @@ export const recipes: Recipe[] = [
       "A simple broth with garlic and spinach that feels fresh and comforting.",
     image: "/images/recipe-placeholder.jpg",
     prepTime: "10 minutes",
-    category: "Cozy Broths & Healing-Feeling Soups",
+    category: "Cozy Broths & Comfort Soups",
     bestFor: ["reset days", "light meals"],
     ingredients: ["3 cups broth", "1 handful spinach", "2 cloves garlic", "Salt to taste"],
     instructions: [
@@ -1135,7 +1135,7 @@ export const recipes: Recipe[] = [
     image: "/images/recipe-placeholder.jpg",
     prepTime: "5 minutes",
     category: "Remedy Shots and Mixes",
-    bestFor: ["simple", "pantry-based remedy", "bold flavor"],
+    bestFor: ["simple", "pantry-based mix", "bold flavor"],
     ingredients: ["1 clove garlic, minced", "1 teaspoon honey"],
     instructions: ["Mix garlic and honey.", "Take as a spoonful."],
     notes: [
@@ -1320,7 +1320,7 @@ export const recipes: Recipe[] = [
     image: "/images/recipe-placeholder.jpg",
     prepTime: "5 minutes",
     category: "Cozy Add-Ons",
-    bestFor: ["sick days", "quick comfort", "simple meals"],
+    bestFor: ["quiet days", "quick comfort", "simple meals"],
     ingredients: ["1 slice bread", "1 tablespoon butter", "1 teaspoon honey"],
     instructions: [
       "Toast the bread.",

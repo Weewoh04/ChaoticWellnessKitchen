@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { AdSlot } from "@/components/AdSlot";
 import { SectionHeading } from "@/components/SectionHeading";
 import { TagPill } from "@/components/TagPill";
+import { siteConfig } from "@/lib/site";
 import { getRecipeBySlug, recipes } from "@/data/recipes";
 
 type RecipePageProps = {
@@ -29,6 +31,15 @@ export async function generateMetadata({ params }: RecipePageProps): Promise<Met
   return {
     title: recipe.title,
     description: recipe.description,
+    alternates: {
+      canonical: `/recipes/${recipe.slug}`,
+    },
+    openGraph: {
+      title: recipe.title,
+      description: recipe.description,
+      type: "article",
+      url: `${siteConfig.url}/recipes/${recipe.slug}`,
+    },
   };
 }
 
@@ -83,6 +94,8 @@ export default async function RecipeDetailPage({ params }: RecipePageProps) {
               ))}
             </ol>
           </section>
+
+          <AdSlot format="horizontal" label="Sponsored placement" slot="recipe-horizontal-1" />
 
           <section>
             <h2 className="font-serif text-3xl text-stone-900">Notes</h2>

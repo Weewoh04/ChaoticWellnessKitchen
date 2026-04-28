@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { AdSlot } from "@/components/AdSlot";
 import { SectionHeading } from "@/components/SectionHeading";
 import { TagPill } from "@/components/TagPill";
 import { blogPosts } from "@/data/blogPosts";
@@ -17,6 +18,7 @@ export default function BlogPage() {
         title="Cozy notes from the kitchen"
         description="Comfort-first kitchen notes, pantry ideas, and cozy rituals you can actually use."
       />
+      <AdSlot className="mx-auto max-w-4xl" format="horizontal" label="Sponsored placement" slot="blog-horizontal-1" />
       <div className="grid gap-6 md:grid-cols-3">
         {blogPosts.map((post) => (
           <article

@@ -5,6 +5,7 @@ import { siteConfig } from "@/lib/site";
 const navLinks = [
   { href: "/blog", label: "Blog" },
   { href: "/about", label: "About" },
+  { href: "/privacy", label: "Privacy" },
   { href: "/disclaimer", label: "Disclaimer" },
 ];
 

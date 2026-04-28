@@ -14,6 +14,9 @@ export function Footer() {
             Content is for educational and informational purposes only and is not medical advice.
             Please read the <Link className="font-semibold text-amber-800 underline" href="/disclaimer">full disclaimer</Link>.
           </p>
+          <p>
+            Read the <Link className="font-semibold text-amber-800 underline" href="/privacy">privacy policy</Link> and <Link className="font-semibold text-amber-800 underline" href="/advertising-disclosure">advertising disclosure</Link>.
+          </p>
           <p>Copyright {new Date().getFullYear()} Chaotic Wellness Kitchen. All rights reserved.</p>
         </div>
       </div>

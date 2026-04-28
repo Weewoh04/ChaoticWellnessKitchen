@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { AdSlot } from "@/components/AdSlot";
 import { RecipeCard } from "@/components/RecipeCard";
 import { SectionHeading } from "@/components/SectionHeading";
 import { recipeCategories, recipes } from "@/data/recipes";
@@ -15,7 +16,7 @@ export default function RecipesPage() {
       <SectionHeading
         eyebrow="Recipes"
         title="Comforting recipes for cozy, practical kitchen rituals"
-        description="Warm cups, infused waters, broths, and easy prep-ahead ideas using local mock data for now."
+        description="Warm cups, infused waters, broths, and easy prep-ahead ideas for real-life kitchens."
       />
       <section className="rounded-[2rem] border border-amber-100 bg-white/75 p-6 shadow-sm sm:p-8">
         <SectionHeading
@@ -35,6 +36,7 @@ export default function RecipesPage() {
           ))}
         </div>
       </section>
+      <AdSlot className="mx-auto max-w-4xl" format="horizontal" label="Sponsored placement" slot="recipes-horizontal-1" />
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         {recipes.map((recipe) => (
           <RecipeCard key={recipe.slug} recipe={recipe} />

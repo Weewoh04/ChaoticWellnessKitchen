@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { AdSlot } from "@/components/AdSlot";
 import { Hero } from "@/components/Hero";
 import { Newsletter } from "@/components/Newsletter";
 import { RecipeCard } from "@/components/RecipeCard";
@@ -37,6 +38,8 @@ export default function HomePage() {
         </article>
       </section>
 
+      <AdSlot className="mx-auto max-w-4xl" format="horizontal" label="Sponsored placement" slot="home-horizontal-1" />
+
       <section className="space-y-8">
         <SectionHeading
           eyebrow="Recipe box"
@@ -68,6 +71,8 @@ export default function HomePage() {
           ))}
         </div>
       </section>
+
+      <AdSlot className="mx-auto max-w-3xl" format="rectangle" label="Sponsored placement" slot="home-rectangle-1" />
 
       <Newsletter />
     </div>
