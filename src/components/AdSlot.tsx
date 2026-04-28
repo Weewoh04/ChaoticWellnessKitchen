@@ -1,7 +1,5 @@
 "use client";
 
-import { useEffect, useRef } from "react";
-
 type AdSlotProps = {
   slot?: string;
   format?: "auto" | "rectangle" | "horizontal";
@@ -9,39 +7,12 @@ type AdSlotProps = {
   className?: string;
 };
 
-const adScriptSrc = "https://quge5.com/88/tag.min.js";
-const adZone = "234249";
-
 export function AdSlot({
   slot: _slot,
   format = "auto",
   label = "Advertisement",
   className = "",
 }: AdSlotProps) {
-  const containerRef = useRef<HTMLDivElement | null>(null);
-
-  useEffect(() => {
-    const container = containerRef.current;
-
-    if (!container) {
-      return;
-    }
-
-    container.innerHTML = "";
-
-    const script = document.createElement("script");
-    script.src = adScriptSrc;
-    script.async = true;
-    script.setAttribute("data-zone", adZone);
-    script.setAttribute("data-cfasync", "false");
-
-    container.appendChild(script);
-
-    return () => {
-      container.innerHTML = "";
-    };
-  }, []);
-
   const minHeightClass =
     format === "horizontal"
       ? "min-h-[140px]"
@@ -57,7 +28,9 @@ export function AdSlot({
       <p className="mb-3 text-center text-[11px] font-bold uppercase tracking-[0.24em] text-stone-500">
         {label}
       </p>
-      <div className="flex min-h-[120px] items-center justify-center" ref={containerRef} />
+      <div className="flex min-h-[120px] items-center justify-center rounded-[1.25rem] border border-dashed border-amber-200 bg-amber-50/60 px-4 text-center text-sm text-stone-600">
+        Ad placement reserved. Connect a trusted ad provider before publishing live ads here.
+      </div>
     </aside>
   );
 }
