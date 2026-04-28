@@ -1,13 +1,6 @@
 "use client";
 
-import Script from "next/script";
-import { useEffect } from "react";
-
-declare global {
-  interface Window {
-    adsbygoogle?: unknown[];
-  }
-}
+import { useEffect, useRef } from "react";
 
 type AdSlotProps = {
   slot?: string;
@@ -16,28 +9,38 @@ type AdSlotProps = {
   className?: string;
 };
 
-const clientId = process.env.NEXT_PUBLIC_ADSENSE_CLIENT;
+const adScriptSrc = "https://quge5.com/88/tag.min.js";
+const adZone = "234249";
 
 export function AdSlot({
-  slot,
+  slot: _slot,
   format = "auto",
   label = "Advertisement",
   className = "",
 }: AdSlotProps) {
-  const isConfigured = Boolean(clientId && slot);
+  const containerRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
-    if (!isConfigured) {
+    const container = containerRef.current;
+
+    if (!container) {
       return;
     }
 
-    try {
-      window.adsbygoogle = window.adsbygoogle ?? [];
-      window.adsbygoogle.push({});
-    } catch {
-      // Ignore duplicate slot initialization during development.
-    }
-  }, [isConfigured, slot]);
+    container.innerHTML = "";
+
+    const script = document.createElement("script");
+    script.src = adScriptSrc;
+    script.async = true;
+    script.setAttribute("data-zone", adZone);
+    script.setAttribute("data-cfasync", "false");
+
+    container.appendChild(script);
+
+    return () => {
+      container.innerHTML = "";
+    };
+  }, []);
 
   const minHeightClass =
     format === "horizontal"
@@ -45,21 +48,6 @@ export function AdSlot({
       : format === "rectangle"
         ? "min-h-[280px]"
         : "min-h-[160px]";
-
-  if (!isConfigured) {
-    return (
-      <aside
-        aria-label={label}
-        className={`rounded-[2rem] border border-dashed border-amber-300 bg-amber-50/70 p-5 text-center text-sm text-stone-600 ${minHeightClass} ${className}`}
-      >
-        <p className="text-xs font-bold uppercase tracking-[0.24em] text-amber-800">{label}</p>
-        <p className="mt-3">
-          Reserved ad placement. Add <code>NEXT_PUBLIC_ADSENSE_CLIENT</code> and a slot ID to turn
-          this on.
-        </p>
-      </aside>
-    );
-  }
 
   return (
     <aside
@@ -69,21 +57,7 @@ export function AdSlot({
       <p className="mb-3 text-center text-[11px] font-bold uppercase tracking-[0.24em] text-stone-500">
         {label}
       </p>
-      <Script
-        async
-        crossOrigin="anonymous"
-        src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${clientId}`}
-        strategy="afterInteractive"
-      />
-      <ins
-        className="adsbygoogle block"
-        data-ad-client={clientId}
-        data-ad-format={format === "rectangle" ? "fluid" : format}
-        data-ad-layout={format === "horizontal" ? "in-article" : undefined}
-        data-ad-slot={slot}
-        data-full-width-responsive="true"
-        style={{ display: "block", minHeight: "120px" }}
-      />
+      <div className="flex min-h-[120px] items-center justify-center" ref={containerRef} />
     </aside>
   );
 }
